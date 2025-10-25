@@ -38,3 +38,24 @@ To modify the registry, the executable must be run with elevated privileges.
 Use with caution. This tool modifies the Windows Registry. Always back up your registry before running.
 
 
+
+## 👥 Team Members
+
+This project was developed by a collaborative team of passionate engineers:
+
+| Name                   | Role & Contributions                                                           |
+|------------------------|--------------------------------------------------------------------------------|
+| **Subramanya S Gujjar** | Team Lead, System-Level Programming, Architecture Design                      |
+| **Tarun S**             | Registry Research, Code Testing, WinAPI Integration                           |
+| **Vikyath M A**         | Documentation, Code Optimization, Project Structuring                         |
+| **Shashank H S**        | Debugging, Windows Internals Research, Reliability Improvements               |
+
+---
+
+
+
+
+
+
+
+
