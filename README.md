@@ -32,3 +32,9 @@ It performs recursive deletion of subkeys and values that match `"MRU"` and rese
 ### Compile with GCC (MinGW)
 ```bash
 gcc src/registry_mru_cleaner.c -o RegistryMRUCleaner.exe
+Run as Administrator
+To modify the registry, the executable must be run with elevated privileges.
+⚠️ Disclaimer
+Use with caution. This tool modifies the Windows Registry. Always back up your registry before running.
+
+
