@@ -1,0 +1,38 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: configure
+      run: ./configure
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
+
+
+      jobs:
+  build:
+    name: Build and Test
+
+
+    - name: Cache build
+      uses: actions/cache@v3
+      with:
+        path: |
+          build
+          .cache
+        key: ${{ runner.os }}-build-${{ hashFiles('**/Makefile.in') }}
+    
